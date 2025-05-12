@@ -21,7 +21,8 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built JAR from the build stage
-COPY --from=build /build/target/GestionUser-0.0.1-SNAPSHOT.jar /app/GestionUser.jar
+COPY --from=build /build/target/Cloud_In_MyPocket-0.0.1-SNAPSHOT.jar /app/GestionUser.jar
+
 
 # Expose the port
 EXPOSE 8080
